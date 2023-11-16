@@ -5,6 +5,8 @@ server:
   port : 9999
 eureka:
   client:
+    fetch-registry: false
+    register-with-eureka: false
     serviceUrl:
       defaultZone: http://65.0.91.13:8761/eureka/
 zuul:
